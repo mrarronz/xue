@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34P-nS-E5g">
+                                <rect key="frame" x="112" y="566" width="151" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_notify_banner" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Li-HbH">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="DSf-Yz-vij"/>
+                                            <constraint firstAttribute="height" constant="44" id="ZDX-iD-37m"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阳光学堂" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-RM-17R">
+                                        <rect key="frame" x="54" y="0.0" width="97" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7qk-NI-hW7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="让学习更有乐趣" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyU-il-ivO">
+                                        <rect key="frame" x="54" y="23" width="97" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6s0-JA-ybv"/>
+                                    <constraint firstItem="MyU-il-ivO" firstAttribute="top" secondItem="NQb-RM-17R" secondAttribute="bottom" constant="2" id="KZ8-8V-C6e"/>
+                                    <constraint firstItem="HMM-Li-HbH" firstAttribute="leading" secondItem="34P-nS-E5g" secondAttribute="leading" id="QFU-re-BCg"/>
+                                    <constraint firstAttribute="trailing" secondItem="NQb-RM-17R" secondAttribute="trailing" id="S29-na-A5e"/>
+                                    <constraint firstItem="HMM-Li-HbH" firstAttribute="top" secondItem="34P-nS-E5g" secondAttribute="top" id="Vwi-No-rka"/>
+                                    <constraint firstAttribute="bottom" secondItem="MyU-il-ivO" secondAttribute="bottom" id="aoK-fV-tAr"/>
+                                    <constraint firstItem="NQb-RM-17R" firstAttribute="top" secondItem="34P-nS-E5g" secondAttribute="top" id="oRA-et-8Tn"/>
+                                    <constraint firstItem="MyU-il-ivO" firstAttribute="leading" secondItem="HMM-Li-HbH" secondAttribute="trailing" constant="10" id="oT2-qQ-QS9"/>
+                                    <constraint firstAttribute="trailing" secondItem="MyU-il-ivO" secondAttribute="trailing" id="s3i-HB-4nd"/>
+                                    <constraint firstAttribute="width" constant="151" id="udF-nx-kw8"/>
+                                    <constraint firstItem="NQb-RM-17R" firstAttribute="leading" secondItem="HMM-Li-HbH" secondAttribute="trailing" constant="10" id="wxd-He-aWl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017 xuetang365.com All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-BQ-MFY">
+                                <rect key="frame" x="0.0" y="628" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zSz-y3-brS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wz8-BQ-MFY" firstAttribute="top" secondItem="34P-nS-E5g" secondAttribute="bottom" constant="18" id="3hS-pF-zcm"/>
+                            <constraint firstItem="34P-nS-E5g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Yb-yA-2qa"/>
+                            <constraint firstItem="Wz8-BQ-MFY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Iex-1j-GBL"/>
+                            <constraint firstAttribute="trailing" secondItem="Wz8-BQ-MFY" secondAttribute="trailing" id="dtY-xt-kAs"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Wz8-BQ-MFY" secondAttribute="bottom" constant="18" id="oYG-ik-ZLh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_notify_banner" width="60" height="60"/>
+    </resources>
+</document>
