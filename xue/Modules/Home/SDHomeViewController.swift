@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SDHomeViewController: SDBaseViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, HomeGridCellDelegate, HomeSectionHeaderViewDelegate {
 
@@ -49,7 +50,7 @@ class SDHomeViewController: SDBaseViewController, UITextFieldDelegate, UITableVi
                 self.tableView?.reloadData()
                 self.loadFlashImages()
             } else {
-                self.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
             }
             self.view.addSubview(self.fpsLabel)
         }
@@ -131,7 +132,7 @@ class SDHomeViewController: SDBaseViewController, UITextFieldDelegate, UITableVi
             if succeed {
                 self.tableView?.reloadData()
             } else {
-                self.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
             }
         }
     }
@@ -232,7 +233,7 @@ class SDHomeViewController: SDBaseViewController, UITextFieldDelegate, UITableVi
                     let indexPath = IndexPath.init(row: 0, section: 0)
                     self.tableView?.reloadRows(at: [indexPath], with: .none)
                 } else {
-                    self.view.toast(error?.errorMsg)
+                    SVProgressHUD.showError(withStatus: error?.errorMsg)
                 }
             })
         }

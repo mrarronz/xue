@@ -10,6 +10,7 @@ import UIKit
 import SDWebImage
 import YTKNetwork
 import AFNetworking
+import NetworkService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -72,6 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Launch options
     
     func setupRequestParams() {
+        SDNetworkConfig.shared().appKey = SDAppKey
+        SDNetworkConfig.shared().appSecret = SDAppSecret
+        
         YTKNetworkConfig.shared().baseUrl = SDOnlineReleaseURL
         let securityPolicy = AFSecurityPolicy.init(pinningMode: .none)
         securityPolicy.allowInvalidCertificates = true

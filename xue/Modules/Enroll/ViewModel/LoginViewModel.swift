@@ -7,22 +7,23 @@
 //
 
 import UIKit
+import NetworkService
 
 class LoginViewModel: NSObject {
     
     var titles: [String] = []
     
-    func allLevels(completion: SDArrayResultClosure?) -> SDBaseRequest {
+    func allLevels(completion: SDArrayResultBlock?) -> SDBaseRequest {
         
         let request = SDGetLevelRequest.init()
-        request.startRequest { (succeed, response, error) in
+        request.start { (succeed, response, error) in
             if succeed {
                 let array = LevelModel.mj_objectArray(withKeyValuesArray: response)
                 for model in array! {
                     self.titles.append((model as! LevelModel).name! as String)
                 }
                 if completion != nil {
-                    completion!(true, array, nil)
+                    completion!(true, array as? [Any], nil)
                 }
             } else {
                 if completion != nil {
@@ -33,16 +34,16 @@ class LoginViewModel: NSObject {
         return request
     }
     
-    func allGrades(completion: SDArrayResultClosure?) -> SDBaseRequest {
+    func allGrades(completion: SDArrayResultBlock?) -> SDBaseRequest {
         
         let levelId: NSString? = kUserDefaults?.levelId as NSString?
         
-        let request = SDGetGradeRequest.init(levelId: levelId!)
-        request.startRequest { (succeed, response, error) in
+        let request = SDGetGradeRequest.init(levelId: levelId! as String)
+        request.start { (succeed, response, error) in
             if succeed {
                 
                 if completion != nil {
-                    completion!(true, response as! NSArray?, nil)
+                    completion!(true, response as? [Any], nil)
                 }
             } else {
                 if completion != nil {

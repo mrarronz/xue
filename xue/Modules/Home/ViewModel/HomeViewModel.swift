@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import YTKNetwork
+import NetworkService
 
 let homePageSize: Int = 4
 let commonPageSize: Int = 10
@@ -45,8 +45,8 @@ class HomeViewModel: NSObject {
      *  获取轮播图
      */
     func loadFlashImages(_ completion: @escaping ((_ imageModels: NSArray) -> Void)) -> SDBaseRequest {
-        let request = SDFlashImageRequest.init()
-        request.startRequest { (succeed, response, error) in
+        let request = SDFlashPictureRequest.init()
+        request.start { (succeed, response, error) in
             if succeed {
                 var array: NSArray? = FlashImageModel.mj_objectArray(withKeyValuesArray: response)
                 if array == nil {
@@ -63,13 +63,13 @@ class HomeViewModel: NSObject {
     /**
      *  获取推荐课程
      */
-    func getRecommendCourse(completion: SDBooleanResuleClosure?) -> SDBaseRequest {
+    func getRecommendCourse(completion: SDBooleanResultBlock?) -> SDBaseRequest {
         
         let request = SDRecommendRequest.init(page: pageForRecommend!,
                                               levelId: kUserDefaults?.levelId,
                                               gradeId: kUserDefaults?.gradeId,
                                               subjectId: kUserDefaults?.subjectId)
-        request.startRequest { (succeed, response, error) in
+        request.start { (succeed, response, error) in
             if succeed {
                 if response == nil {
                     self.pageForRecommend = 1
@@ -126,7 +126,7 @@ class HomeViewModel: NSObject {
     /**
      *  获取课程和试题
      */
-    func loadCourseData(completion: SDBooleanResuleClosure?) {
+    func loadCourseData(completion: SDBooleanResultBlock?) {
         
         // 推荐课程
         let request1 = SDRecommendRequest.init(page: pageForRecommend!,
@@ -222,7 +222,7 @@ class HomeViewModel: NSObject {
             
         }, failure: { (batchRequest) in
             
-            let error = SDError.init(domain: SDResponseNoneDomain, code: -1, msg: SDCommonRequestError)
+            let error = SDError.init(domain: SDResponseNoneDomain, code: 10000, msg: SDCommonRequestError)
             if completion != nil {
                 completion!(false, error)
             }

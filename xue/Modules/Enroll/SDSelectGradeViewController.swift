@@ -8,6 +8,7 @@
 
 import UIKit
 import VTMagic
+import SVProgressHUD
 
 class SDSelectGradeViewController: SDBaseViewController, VTMagicViewDataSource, VTMagicViewDelegate {
     
@@ -45,13 +46,13 @@ class SDSelectGradeViewController: SDBaseViewController, VTMagicViewDataSource, 
         
         _ = loginVM.allLevels(completion: { (succeed, array, error) in
             if succeed {
-                self.levels = array!
+                self.levels = array! as NSArray
                 let levelModel:LevelModel = self.levels.object(at: 1) as! LevelModel
                 kUserDefaults?.levelId = levelModel.levelId
                 self.setupViews()
                 self.magicVC.magicView.reloadData(toPage: 1)
             } else {
-                self.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
                 // TODO:显示重新加载的view
             }
         })

@@ -78,7 +78,7 @@ class AnotherHomeViewController: SDBaseViewController, UICollectionViewDataSourc
                 self.collectionView.reloadData()
                 self.loadFlashImages()
             } else {
-                self.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
             }
             self.view.addSubview(self.fpsLabel)
         }
@@ -207,7 +207,7 @@ class AnotherHomeViewController: SDBaseViewController, UICollectionViewDataSourc
             if succeed {
                 self.collectionView.reloadData()
             } else {
-                self.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
             }
         }
     }

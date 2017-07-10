@@ -22,9 +22,10 @@ PODS:
   - IGListKit/Diffing (3.0.0)
   - ionicons (2.0.3)
   - Locksmith (3.0.0)
-  - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - NetworkService (0.0.1):
+    - YTKNetwork
   - PAPreferences (0.5)
   - ReactiveCocoa (5.0.0):
     - ReactiveSwift (~> 1.0.0)
@@ -35,12 +36,12 @@ PODS:
   - Realm/Headers (2.8.0)
   - RealmSwift (2.8.0):
     - Realm (= 2.8.0)
-  - Result (3.2.1)
-  - SDCycleScrollView (1.65):
-    - SDWebImage (~> 3.7)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - Result (3.2.3)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SnapKit (3.0.2)
   - SVProgressHUD (2.1.2)
   - UMengAnalytics-NO-IDFA (4.2.5)
@@ -58,20 +59,28 @@ DEPENDENCIES:
   - IGListKit (~> 3.0)
   - ionicons
   - Locksmith
-  - MBProgressHUD (~> 1.0)
   - MJExtension
   - MJRefresh
+  - NetworkService (from `svn://172.168.1.250/source/mobile/iOS/code/pods/NetworkService`)
   - PAPreferences
   - ReactiveCocoa (= 5.0.0)
   - RealmSwift
   - SDCycleScrollView (~> 1.64)
-  - SDWebImage (~> 3.8)
+  - SDWebImage
   - SnapKit (~> 3.0.2)
   - SVProgressHUD
   - UMengAnalytics-NO-IDFA
   - VTMagic
-  - YTKNetwork
   - YYKit
+
+EXTERNAL SOURCES:
+  NetworkService:
+    :svn: svn://172.168.1.250/source/mobile/iOS/code/pods/NetworkService
+
+CHECKOUT OPTIONS:
+  NetworkService:
+    :revision: '11327'
+    :svn: svn://172.168.1.250/source/mobile/iOS/code/pods/NetworkService
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -79,17 +88,17 @@ SPEC CHECKSUMS:
   IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
   ionicons: ec1e86e6c3316bd9942a7f024080dd75c70dd6a5
   Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  NetworkService: 0782290688f9761a320fff51db5fe654834bd138
   PAPreferences: 9f0ffb1e67174a0df001af9d3320166ceb9ee6f5
   ReactiveCocoa: 60ef0da915b4f70c34ebecc3f4fb8f96af0e53d6
   ReactiveSwift: b1453c8885ebfb9b09b6d60bc5bc3303f56dc72c
   Realm: 929243ad2b618b3232e70658bedc61110e7563f1
   RealmSwift: 5b7079b891f2833d1849294161ba3e092bbda3f6
-  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
-  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
@@ -97,6 +106,6 @@ SPEC CHECKSUMS:
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2736c49c10d347d0f2623b0168f0b104e90be0c6
+PODFILE CHECKSUM: 13bb7f612e1eb216173907a2f7caa550081409c8
 
 COCOAPODS: 1.2.1

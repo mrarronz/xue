@@ -8,6 +8,7 @@
 
 import UIKit
 import SDCycleScrollView
+import SVProgressHUD
 
 let collectionHeaderReuseID = "AnotherCollectionHeaderView"
 let headerViewHeight = flashImageHeight() + 100
@@ -137,7 +138,7 @@ class AnotherCollectionHeaderView: UICollectionReusableView, SDCycleScrollViewDe
             if succeed {
                 self.homeVC?.collectionView.reloadData()
             } else {
-                self.homeVC?.view.toast(error?.errorMsg)
+                SVProgressHUD.showError(withStatus: error?.errorMsg)
             }
         })
     }

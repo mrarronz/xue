@@ -42,8 +42,6 @@
 		E21258791DB48B9C00D6E53E /* SDDashLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21258781DB48B9C00D6E53E /* SDDashLabel.swift */; };
 		E212587C1DB49D0100D6E53E /* SDBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212587B1DB49D0100D6E53E /* SDBadgeView.swift */; };
 		E2141A981DC8790900B4517C /* SDGlobalDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2141A971DC8790900B4517C /* SDGlobalDefines.swift */; };
-		E2141A9A1DC87A1C00B4517C /* SDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2141A991DC87A1C00B4517C /* SDError.swift */; };
-		E2141A9C1DC87A4F00B4517C /* SDBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2141A9B1DC87A4F00B4517C /* SDBaseRequest.swift */; };
 		E2141A9E1DC8938E00B4517C /* SDAppPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2141A9D1DC8938E00B4517C /* SDAppPreference.swift */; };
 		E2141AA91DC8947700B4517C /* NSString+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = E2141AA11DC8947700B4517C /* NSString+Convert.m */; };
 		E2141AAA1DC8947700B4517C /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = E2141AA31DC8947700B4517C /* NSString+Encode.m */; };
@@ -73,20 +71,12 @@
 		E275C3B71DD4212900C459D1 /* SDRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275C3B61DD4212900C459D1 /* SDRefreshFooter.swift */; };
 		E279998D1DD1A7B1001B7779 /* SelectGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279998C1DD1A7B1001B7779 /* SelectGradeCell.swift */; };
 		E279998F1DD1AB07001B7779 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279998E1DD1AB07001B7779 /* GradeViewController.swift */; };
-		E2BA22A41DCC18A600A0BB6F /* SDHomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22A31DCC18A600A0BB6F /* SDHomeRequest.swift */; };
-		E2BA22A61DCC1C8600A0BB6F /* SDYXTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22A51DCC1C8600A0BB6F /* SDYXTRequest.swift */; };
-		E2BA22A81DCC2A6600A0BB6F /* SDUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22A71DCC2A6600A0BB6F /* SDUserRequest.swift */; };
-		E2BA22AA1DCC5B8100A0BB6F /* SDOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22A91DCC5B8100A0BB6F /* SDOrderRequest.swift */; };
-		E2BA22AC1DCC5D1F00A0BB6F /* SDTeacherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22AB1DCC5D1F00A0BB6F /* SDTeacherRequest.swift */; };
-		E2BA22AE1DCC5D3E00A0BB6F /* SDCourseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22AD1DCC5D3E00A0BB6F /* SDCourseRequest.swift */; };
-		E2BA22B01DCC6D1100A0BB6F /* SDSchoolRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22AF1DCC6D1100A0BB6F /* SDSchoolRequest.swift */; };
 		E2BA22B81DD01F8000A0BB6F /* NSObject+PropertyDict.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA22B71DD01F8000A0BB6F /* NSObject+PropertyDict.m */; };
 		E2D4A4371EEA8DA80029C9A0 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D4A4361EEA8DA80029C9A0 /* iconfont.ttf */; };
 		E2E948071DD56BB900EF48DA /* AnotherSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E948061DD56BB900EF48DA /* AnotherSectionHeaderView.swift */; };
 		E2E948091DD56BDE00EF48DA /* AnotherCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E948081DD56BDE00EF48DA /* AnotherCollectionHeaderView.swift */; };
 		E2E9480B1DD56BFC00EF48DA /* AnotherTikuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9480A1DD56BFC00EF48DA /* AnotherTikuCell.swift */; };
 		E2E9480D1DD56C2400EF48DA /* AnotherHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9480C1DD56C2400EF48DA /* AnotherHomeViewController.swift */; };
-		E2F346131DCB6C5300499880 /* SDCommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F346121DCB6C5300499880 /* SDCommonRequest.swift */; };
 		E2FEE5581DBCEFB200732EA1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEE5571DBCEFB200732EA1 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -152,8 +142,6 @@
 		E21258781DB48B9C00D6E53E /* SDDashLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDDashLabel.swift; path = CustomLabel/SDDashLabel.swift; sourceTree = "<group>"; };
 		E212587B1DB49D0100D6E53E /* SDBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDBadgeView.swift; path = BadgeView/SDBadgeView.swift; sourceTree = "<group>"; };
 		E2141A971DC8790900B4517C /* SDGlobalDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDGlobalDefines.swift; sourceTree = "<group>"; };
-		E2141A991DC87A1C00B4517C /* SDError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDError.swift; sourceTree = "<group>"; };
-		E2141A9B1DC87A4F00B4517C /* SDBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDBaseRequest.swift; sourceTree = "<group>"; };
 		E2141A9D1DC8938E00B4517C /* SDAppPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDAppPreference.swift; sourceTree = "<group>"; };
 		E2141AA01DC8947700B4517C /* NSString+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Convert.h"; sourceTree = "<group>"; };
 		E2141AA11DC8947700B4517C /* NSString+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Convert.m"; sourceTree = "<group>"; };
@@ -192,13 +180,6 @@
 		E275C3B61DD4212900C459D1 /* SDRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDRefreshFooter.swift; path = RefreshControl/SDRefreshFooter.swift; sourceTree = "<group>"; };
 		E279998C1DD1A7B1001B7779 /* SelectGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectGradeCell.swift; path = View/Cell/SelectGradeCell.swift; sourceTree = "<group>"; };
 		E279998E1DD1AB07001B7779 /* GradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
-		E2BA22A31DCC18A600A0BB6F /* SDHomeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDHomeRequest.swift; sourceTree = "<group>"; };
-		E2BA22A51DCC1C8600A0BB6F /* SDYXTRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDYXTRequest.swift; sourceTree = "<group>"; };
-		E2BA22A71DCC2A6600A0BB6F /* SDUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDUserRequest.swift; sourceTree = "<group>"; };
-		E2BA22A91DCC5B8100A0BB6F /* SDOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDOrderRequest.swift; sourceTree = "<group>"; };
-		E2BA22AB1DCC5D1F00A0BB6F /* SDTeacherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTeacherRequest.swift; sourceTree = "<group>"; };
-		E2BA22AD1DCC5D3E00A0BB6F /* SDCourseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCourseRequest.swift; sourceTree = "<group>"; };
-		E2BA22AF1DCC6D1100A0BB6F /* SDSchoolRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSchoolRequest.swift; sourceTree = "<group>"; };
 		E2BA22B61DD01F8000A0BB6F /* NSObject+PropertyDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyDict.h"; sourceTree = "<group>"; };
 		E2BA22B71DD01F8000A0BB6F /* NSObject+PropertyDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyDict.m"; sourceTree = "<group>"; };
 		E2D4A4361EEA8DA80029C9A0 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
@@ -207,7 +188,6 @@
 		E2E948081DD56BDE00EF48DA /* AnotherCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnotherCollectionHeaderView.swift; path = Another/AnotherCollectionHeaderView.swift; sourceTree = "<group>"; };
 		E2E9480A1DD56BFC00EF48DA /* AnotherTikuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnotherTikuCell.swift; path = Another/AnotherTikuCell.swift; sourceTree = "<group>"; };
 		E2E9480C1DD56C2400EF48DA /* AnotherHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnotherHomeViewController.swift; path = Another/AnotherHomeViewController.swift; sourceTree = "<group>"; };
-		E2F346121DCB6C5300499880 /* SDCommonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCommonRequest.swift; sourceTree = "<group>"; };
 		E2FEE5571DBCEFB200732EA1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -293,7 +273,6 @@
 				E21257EE1DAE367500D6E53E /* ThirdParty */,
 				E21257E91DAE367500D6E53E /* Extension */,
 				E21257EA1DAE367500D6E53E /* Models */,
-				E21257ED1DAE367500D6E53E /* Service */,
 				E21257EF1DAE367500D6E53E /* Utils */,
 				E21257F01DAE367500D6E53E /* Views */,
 				E21257F11DAE36D500D6E53E /* Modules */,
@@ -353,23 +332,6 @@
 				E21258521DAF750B00D6E53E /* plist */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		E21257ED1DAE367500D6E53E /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				E2141A991DC87A1C00B4517C /* SDError.swift */,
-				E2141A9B1DC87A4F00B4517C /* SDBaseRequest.swift */,
-				E2F346121DCB6C5300499880 /* SDCommonRequest.swift */,
-				E2BA22A31DCC18A600A0BB6F /* SDHomeRequest.swift */,
-				E2BA22A51DCC1C8600A0BB6F /* SDYXTRequest.swift */,
-				E2BA22A71DCC2A6600A0BB6F /* SDUserRequest.swift */,
-				E2BA22A91DCC5B8100A0BB6F /* SDOrderRequest.swift */,
-				E2BA22AB1DCC5D1F00A0BB6F /* SDTeacherRequest.swift */,
-				E2BA22AD1DCC5D3E00A0BB6F /* SDCourseRequest.swift */,
-				E2BA22AF1DCC6D1100A0BB6F /* SDSchoolRequest.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		E21257EE1DAE367500D6E53E /* ThirdParty */ = {
@@ -903,8 +865,6 @@
 			files = (
 				E22365F41DD078BC0022837F /* LoginViewModel.swift in Sources */,
 				E212586B1DB2669B00D6E53E /* SDTikuListCell.swift in Sources */,
-				E2BA22B01DCC6D1100A0BB6F /* SDSchoolRequest.swift in Sources */,
-				E2BA22AE1DCC5D3E00A0BB6F /* SDCourseRequest.swift in Sources */,
 				E275C3AE1DD2CB9600C459D1 /* HomeGridCell.swift in Sources */,
 				E21258011DAE385100D6E53E /* SDMySchoolViewController.swift in Sources */,
 				E2E9480B1DD56BFC00EF48DA /* AnotherTikuCell.swift in Sources */,
@@ -935,17 +895,12 @@
 				E22365FA1DD0839A0022837F /* HomeModel.swift in Sources */,
 				E21258791DB48B9C00D6E53E /* SDDashLabel.swift in Sources */,
 				E21257FB1DAE37A200D6E53E /* SDNavigationController.swift in Sources */,
-				E2BA22A81DCC2A6600A0BB6F /* SDUserRequest.swift in Sources */,
 				E23C66561E655F23001BEA6B /* YYFPSLabel.m in Sources */,
 				E21258721DB46B1700D6E53E /* CommonButton.swift in Sources */,
-				E2BA22AA1DCC5B8100A0BB6F /* SDOrderRequest.swift in Sources */,
 				E2141AA91DC8947700B4517C /* NSString+Convert.m in Sources */,
 				E21257FD1DAE37C800D6E53E /* SDBaseViewController.swift in Sources */,
-				E2141A9A1DC87A1C00B4517C /* SDError.swift in Sources */,
 				E21257BC1DAE354000D6E53E /* AppDelegate.swift in Sources */,
-				E2141A9C1DC87A4F00B4517C /* SDBaseRequest.swift in Sources */,
 				E2141A981DC8790900B4517C /* SDGlobalDefines.swift in Sources */,
-				E2BA22A41DCC18A600A0BB6F /* SDHomeRequest.swift in Sources */,
 				E20516101E1119760063DA5F /* NavigationBarExtension.swift in Sources */,
 				E21258071DAE38BC00D6E53E /* SDLoginViewController.swift in Sources */,
 				E2308E011DB5BECD002F958B /* SDUserDefaultsPreference.m in Sources */,
@@ -955,18 +910,15 @@
 				E2308E0A1DB5F52F002F958B /* UIColor+Util.m in Sources */,
 				E22365F71DD078F80022837F /* LoginModel.swift in Sources */,
 				E2E948091DD56BDE00EF48DA /* AnotherCollectionHeaderView.swift in Sources */,
-				E2F346131DCB6C5300499880 /* SDCommonRequest.swift in Sources */,
 				E23D167E1E70070200E9F0A5 /* ProfileHeaderView.swift in Sources */,
 				E21258051DAE388500D6E53E /* SDXuankeViewController.swift in Sources */,
 				E205160E1E1103C90063DA5F /* NavigationController.swift in Sources */,
-				E2BA22A61DCC1C8600A0BB6F /* SDYXTRequest.swift in Sources */,
 				E2141AAC1DC8947700B4517C /* NSString+Validation.m in Sources */,
 				E21258671DB11E4300D6E53E /* SDUIElementUtil.swift in Sources */,
 				E23C66571E655F23001BEA6B /* YYWeakProxy.m in Sources */,
 				E2E948071DD56BB900EF48DA /* AnotherSectionHeaderView.swift in Sources */,
 				E21258651DB0CE1500D6E53E /* SDUserOptionCell.swift in Sources */,
 				E21258561DAF7D9800D6E53E /* SDDictHandler.swift in Sources */,
-				E2BA22AC1DCC5D1F00A0BB6F /* SDTeacherRequest.swift in Sources */,
 				E2141AAA1DC8947700B4517C /* NSString+Encode.m in Sources */,
 				E23D167C1E6FFC1100E9F0A5 /* StrechableHeaderView.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class GradeViewController: SDBaseViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -83,10 +84,10 @@ class GradeViewController: SDBaseViewController, UICollectionViewDataSource, UIC
                 self.stopAnimating()
                 if succeed {
                     self.isDataLoaded = true
-                    self.items = array!
+                    self.items = array! as NSArray
                     self.collectionView?.reloadData()
                 } else {
-                    self.view.toast(error?.errorMsg)
+                    SVProgressHUD.showError(withStatus: error?.errorMsg)
                 }
             })
         } else {
